@@ -1,0 +1,124 @@
+[
+    {
+      "id": 1,
+      "fecha": "6 de enero de 2025",
+      "titulo": "Nuevo plan de pagos para pymes y pequeños contribuyentes",
+      "resumen": "La Agencia de Recaudación y Control Aduanero (ARCA) pone en marcha un régimen especial de facilidades de pago para micro, pequeñas y medianas empresas, pequeños contribuyentes y entidades sin fines de lucro.",
+      "contenido": [
+        {
+          "tipo": "texto",
+          "valor": "<strong>La Agencia de Recaudación y Control Aduanero (ARCA) pone en marcha un régimen especial de facilidades de pago </strong>destinado a los sujetos que revistan la condición de <strong>micro, pequeñas o medianas empresas</strong> -Tramos 1 y 2-, las personas humanas y sucesiones indivisas caracterizadas como “pequeños contribuyentes”, las entidades sin fines de lucro y los contribuyentes pertenecientes al sector de salud, que hubiesen resultado alcanzadas por la suspensión de los juicios de ejecución fiscal y traba de medidas cautelares\n\n"
+        },
+        {
+          "tipo": "texto",
+          "valor": "El nuevo plan de facilidades contempla obligaciones vencidas y multas aplicadas hasta el 31 de diciembre de 2024, inclusive. Su adhesión podrá realizarse desde el 3 de febrero hasta el 30 de abril de 2025, ambos inclusive. Según lo detallado por ARCA,las cuotas serán mensuales, iguales, consecutivas y a tasa fija, es decir que no se cambiará la tasa de financiación durante la vigencia del plan de pagos. A su vez, el plan contiene una considerable reducción de la tasa de financiación y <strong>no requiere un pago a cuenta.</strong>\n\n"
+        },
+
+
+        {
+            "tipo": "texto",
+            "valor": "El plan de pago contempla una tasa de financiación que varía según el tipo de contribuyente, a saber:\n\n"
+        },
+
+        {
+          "tipo": "lista",
+          "valor": [
+            "Para <strong>pequeños contribuyentes, micro y pequeñas empresas, entidades sin fines de lucro y sector salud </strong> será un 25% sobre la tasa de interés resarcitorio.",
+            "Para <strong>medianas empresas -Tramos 1 y 2-</strong> se aplicará un 40% sobre la tasa de interés resarcitorio,vigente al momento de la implementación del régimen."
+          ]
+        },
+        {
+          "tipo": "texto",
+          "valor": "Es importante considerar que las deudas que se pueden incorporar al plan son las siguientes:"
+        },
+        {
+          "tipo": "lista",
+          "valor": [
+            "Impositivas y de los recursos de la seguridad social, incluidas sus intereses y multas.",
+            "Retenciones y percepciones impositivas.",
+            "Multas impuestas, cargos suplementarios por tributos a la importación o exportación..."
+          ]
+        },
+        {
+          "tipo": "texto",
+          "valor": "Por su parte, son obligaciones excluidas del plan:"
+        },
+        {
+          "tipo": "lista",
+          "valor": [
+            "Las retenciones y percepciones previsionales por cualquier concepto, practicadas o no, excepto los aportes personales correspondientes a los trabajadores en relación de dependencia",
+            "Los anticipos y/o pagos a cuenta.",
+            "El impuesto al valor agregado que se debe ingresar por:",
+            {
+              "sublista": [
+                "Prestaciones de servicios realizadas en el exterior, cuya utilización o explotación efectiva se lleva a cabo en el país, conforme a lo previsto en el inciso d) del artículo 1° de la Ley de Impuesto al Valor Agregado, texto ordenado en 1997 y sus modificaciones.",
+                "Prestaciones de servicios digitales a que se refiere el inciso e) del artículo 1° de la Ley de Impuesto al Valor Agregado, texto ordenado en 1997 y sus modificaciones.",
+                "Prestaciones de servicios realizadas en el país por sujetos radicados en el exterior, incluso cuando el solicitante se trate de un responsable sustituto, conforme a lo dispuesto en el artículo sin número agregado a continuación del artículo 4° de la Ley de Impuesto al Valor Agregado, texto ordenado en 1997 y sus modificaciones."
+              ]
+            },
+            "Los aportes y las contribuciones con destino al Régimen Nacional de Obras Sociales, excepto los correspondientes a los contribuyentes adheridos al Régimen Simplificado para Pequeños Contribuyentes (RS)",
+            "Las cuotas destinadas a las Aseguradoras de Riesgos del Trabajo (ART).",
+            "Los aportes y las contribuciones mensuales con destino al Registro Nacional de Trabajadores Rurales y Empleadores (RENATRE) y al Registro Nacional de Trabajadores y Empleadores Agrarios (RENATEA).",
+            "El impuesto interno -cigarrillos- establecido por el artículo 15, Capítulo I, Título II de la Ley de Impuestos Internos, texto sustituido por la Ley N° 24.674 y sus modificaciones, y el impuesto adicional de emergencia sobre el precio final de venta de cigarrillos creado por la Ley N° 24.625 y sus modificaciones.",
+            "Las cuotas de planes de facilidades de pago vigentes.",
+            "Los tributos y/o las multas que surjan como consecuencia de infracciones al artículo 488 del Régimen de Equipaje del Código Aduanero -Ley N° 22.415 y sus modificaciones-.",
+            "Los intereses, las multas y demás accesorios relacionados con los conceptos precedentes, excepto los intereses sobre el capital cancelado de anticipos, pagos a cuenta, retenciones, percepciones así como del impuesto al valor agregado a que se refiere el inciso c) de este artículo"
+          ]
+        },
+        {
+            "tipo": "texto",
+            "valor": "La cantidad máxima de cuotas y la tasa de interés de financiación de los planes de facilidades de pago serán las que, según el tipo de contribuyente conforme al artículo 1° de la presente y de deuda, se indican seguidamente:"
+        },
+        {
+            "tipo": "imagen",
+            "valor": "plan.png"
+        },
+        {
+            "tipo": "imagen",
+            "valor": "plan2.png"
+        }
+
+      ]
+      
+    },
+    
+    {
+        "id": 2,
+        "fecha": "6 de enero de 2025",
+        "titulo": "Vuelven los embargos para pymes y pequeños contribuyentes",
+        "resumen": "vuelven los embargos y juicios de ejecución fiscal para micro, pequeñas y medianas empresas y pequeños contribuyentes.",
+        "contenido": [
+            {
+
+                "tipo": "texto",
+                "valor": "<strong>El 27 de diciembre de 2024, el ministerio de Economía comunicó que a partir del 1 de enero de 2025 vuelven los embargos y juicios de ejecución fiscal para micro, pequeñas y medianas empresas y pequeños contribuyentes.</strong>\n\n"
+            },
+            {
+
+                "tipo": "texto",
+                "valor": "Recordemos que, a partir de la Resolución 617/2024, se mantenía vigente la suspensión de inicios de juicios de ejecución fiscal y la traba de medidas cautelares para las micro, pequeñas y medianas empresas -Tramo 1 y 2- (con certificado MiPyME vigente), las personas humanas y sucesiones indivisas que sean consideradas pequeños contribuyentes, las entidades sin fines de lucro y los contribuyentes pertenecientes al sector de salud.\n\n"
+            },
+            {
+
+                "tipo": "texto",
+                "valor": "La publicación de la <strong> Resolución 1445/2024 </strong> encomienda a la Agencia de Recaudación y Control Aduanero <strong>(ARCA)</strong> que a partir del 1 de enero de 2025 se puedan iniciar juicios de ejecución fiscal y embargos a pymes y pequeños contribuyentes. No obstante, esta misma resolución dispone prorrogar los mismos y de las trabas a las medidas cautelares hasta el 31 de julio de 2025, inclusive, a los siguientes contribuyentes:\n\n"
+            },
+            {
+                "tipo": "lista",
+                "valor": [
+                  "Entidades sin fines de lucro.",
+                  "Contribuyentes del sector salud."
+                 
+                ]
+            },
+
+            {
+            "tipo": "texto",
+            "valor": "En conclusión, a partir del 1 de enero de 2025 <strongvuelven los embargos y juicios de ejecución fiscal, excepto para entidades sin fines de lucro y contribuyentes del sector salud, los cuales gozarán de la suspensión hasta el 31 de julio de 2025. De esta manera, quedan fuera de esta prórroga las micro, pequeñas y medianas empresas como así también las personas humanas y sucesiones indivisas que sean consideradas pequeños contribuyentes. Es importante tener presente que durante enero se encuentra la feria fiscal, por lo que los juicios de ejecución fiscal y embargos comenzarán a realizarse a partir de febrero 2025.\n\n"
+          }
+        
+        ]
+    }
+]
+  
+  

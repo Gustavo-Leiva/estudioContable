@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "fecha": "6 de enero de 2025",
+      "titulo": "Nuevo plan de pagos para pymes y pequeños contribuyentes",
+      "resumen": "La Agencia de Recaudación y Control Aduanero (ARCA) pone en marcha un régimen especial de facilidades de pago para micro, pequeñas y medianas empresas, pequeños contribuyentes y entidades sin fines de lucro.",
+      "contenido": [
+        {
+          "tipo": "texto",
+          "valor": "La Agencia de Recaudación y Control Aduanero (ARCA) pone en marcha un régimen especial de facilidades de pago destinado a los sujetos que revistan la condición de micro, pequeñas o medianas empresas -Tramos 1 y 2-, las personas humanas y sucesiones indivisas caracterizadas como “pequeños contribuyentes”, las entidades sin fines de lucro y los contribuyentes pertenecientes al sector de salud, que hubiesen resultado alcanzadas por la suspensión de los juicios de ejecución fiscal y traba de medidas cautelares\n\n"
+        },
+        {
+          "tipo": "texto",
+          "valor": "El nuevo plan de facilidades contempla obligaciones vencidas y multas aplicadas hasta el 31 de diciembre de 2024, inclusive. Su adhesión podrá realizarse desde el 3 de febrero hasta el 30 de abril de 2025, ambos inclusive. Según lo detallado por ARCA,las cuotas serán mensuales, iguales, consecutivas y a tasa fija, es decir que no se cambiará la tasa de financiación durante la vigencia del plan de pagos. A su vez, el plan contiene una considerable reducción de la tasa de financiación y no requiere un pago a cuenta.\n\n"
+        },
+
+
+        {
+            "tipo": "texto",
+            "valor": "El plan de pago contempla una tasa de financiación que varía según el tipo de contribuyente, a saber:"
+        },
+
+        {
+          "tipo": "lista",
+          "valor": [
+            "Para pequeños contribuyentes, micro y pequeñas empresas, entidades sin fines de lucro y sector salud: 25% sobre la tasa de interés resarcitorio.",
+            "Para medianas empresas -Tramos 1 y 2-: 40% sobre la tasa de interés resarcitorio."
+          ]
+        },
+        {
+          "tipo": "texto",
+          "valor": "Es importante considerar que las deudas que se pueden incorporar al plan son las siguientes:"
+        },
+        {
+          "tipo": "lista",
+          "valor": [
+            "Impositivas y de los recursos de la seguridad social, incluidas sus intereses y multas.",
+            "Retenciones y percepciones impositivas.",
+            "Multas impuestas, cargos suplementarios por tributos a la importación o exportación..."
+          ]
+        },
+        {
+          "tipo": "texto",
+          "valor": "Por su parte, son obligaciones excluidas del plan:"
+        },
+        {
+          "tipo": "lista",
+          "valor": [
+            "Las retenciones y percepciones previsionales por cualquier concepto...",
+            "Los anticipos y/o pagos a cuenta.",
+            {
+              "sublista": [
+                "Prestaciones de servicios realizadas en el exterior...",
+                "Prestaciones de servicios digitales...",
+                "Prestaciones de servicios realizadas en el país..."
+              ]
+            },
+            "Los aportes y las contribuciones con destino al Régimen Nacional de Obras Sociales...",
+            "Las cuotas destinadas a las Aseguradoras de Riesgos del Trabajo (ART).",
+            "Los aportes y las contribuciones mensuales con destino al Registro Nacional de Trabajadores Rurales y Empleadores (RENATRE)...",
+            "El impuesto interno -cigarrillos- establecido por la Ley N° 24.674...",
+            "Las cuotas de planes de facilidades de pago vigentes.",
+            "Los tributos y/o las multas que surjan como consecuencia de infracciones al artículo 488 del Código Aduanero..."
+          ]
+        }
+      ],
+      "imagenes": ["plan.png"],
+      "etiquetas": ["pymes", "plan de pagos", "impuestos"]
+    }
+  ]
+  
+  
