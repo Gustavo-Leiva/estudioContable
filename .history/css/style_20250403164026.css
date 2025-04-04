@@ -1,0 +1,1544 @@
+/*----------------
+Indice de Estilos
+1) Estilos generales
+2) BARRA SUPERIOR (Top Bar)
+ 2.1 Sección de Contacto en la Barra Superior(Estilos)
+ 2.2  Redes Sociales en la Barra Superior
+3) MENÚ DE NAVEGACIÓN PRINCIPAL
+4) ESTILOS SECCION INICIO
+4.1) ESTILOS SECCION INICIO (BENEFICIOS)
+4.2 ESTILOS SECCION INICIO (PREGUNTAS Y RESPUESTA)
+4.3) ESTILOS SECCION INICIO (TESTIMONIOS)  
+5) ESTILOS SECCION NOSOTROS*
+6) ESTILOS SECCION BLOG*
+7) ESTILOS DE SECCION SERVICIOS
+8) ESTILOS DE CONTACTO*
+9) ESTILOS DE FOOTER*
+
+
+------------------*/
+
+
+
+
+/*-------------------------------
+1) Estilos generales
+--------------------------------*/
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Definir la fuente Gilroy Regular */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-Regular.otf') format('opentype'); /* Ruta al archivo .otf */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Definir la fuente Gilroy Medium */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-Medium.otf') format('opentype'); /* Ruta al archivo .otf */
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Definir la fuente Gilroy Regular Italic */
+@font-face {
+    font-family: 'Gilroy';  /* Mantener el mismo nombre para que sea más consistente */
+    src: url('../fonts/gilroy/Gilroy-RegularItalic.otf') format('opentype'); /* Ruta correcta */
+    font-weight: normal;
+    font-style: italic; /* Definir estilo cursivo */
+}
+
+
+
+body{
+    margin: 0 auto;
+    /* font-family: 'Poppins', sans-serif, "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    /* font-weight: 200;
+    font-size: 1rem; */
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste profesional del texto */
+.tareas {
+    position: relative;
+    z-index: 2;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 1.3em;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* Brillo sutil */
+    text-align: center;
+    margin: 0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMove 1.5s ease-out forwards;
+    font-style: medium;
+}
+
+
+/* Animación elegante */
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+  /* Estilo base para los titulos que aparecen sobre las imagenes de las secciones*/
+.leyenda{
+    
+    font-weight: 100;
+    margin-top: 8rem;
+    position:absolute;
+    text-align: center;
+    /* font-size: 3rem;
+    font-weight: 300; */
+    color:  #f26522;
+    color:  #D3D3D3;
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards ;
+    font-style: medium;
+}
+
+
+/* Definición de la animación mover-izquierda-derecha */
+@keyframes mover-izquierda-derecha {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+/* Estilos para el botón de whatsapp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1110;
+    border-radius: 50%;
+    background-color: #25D366;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button i {
+    color: white;
+    font-size: 30px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* ===================================================================
+🎯 2) BARRA SUPERIOR (Top Bar)
+=======================================================================
+   📝 **Descripción:**
+   La barra superior (Top Bar) contiene información clave de contacto y
+   enlaces a redes sociales de la empresa. Está ubicada en la parte superior
+   de la página, proporcionando fácil acceso a los visitantes.
+
+   🔧 **Funcionalidad:**
+   - **Información de contacto:** Teléfonos y correo electrónico.
+   - **Redes sociales:** Enlaces directos a Facebook, Twitter, Instagram y LinkedIn.
+   - **Comportamiento al hacer scroll:** 
+     - Cuando el usuario hace scroll hacia abajo, la barra se oculta para maximizar el espacio de contenido. 
+     - Al hacer scroll hacia arriba, la barra se muestra nuevamente (ver su funcion en el archivo app7.js).
+
+   🚀 **Interactividad:**
+   - **Redes sociales:** Cada icono es un enlace a las redes sociales correspondientes.
+   - **Responsividad:** Se adapta para dispositivos móviles, manteniendo la accesibilidad.
+
+=======================================================================*/
+
+   .top-bar {
+    display: flex; /* Permite alinear los elementos en una fila */
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    background-color:  #1A202C; /* Color de fondo corporativo */
+    padding: 0.5rem 2rem; /* Espaciado interno para mejorar la legibilidad */
+    font-size: 0.9rem; /* Tamaño de fuente reducido para mayor compactibilidad */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    flex-wrap: wrap;
+    height: 3rem;
+    
+ }
+
+    /* Ocultar la sección de contacto y redes sociales cuando
+    se escrolea hacia abajo*/
+    .top-bar.hidden {
+        transform: translateY(-100%);    /* Mueve la barra completamente fuera de la pantalla */
+        opacity: 0;                      /* Hace la barra completamente invisible */
+        pointer-events: none;            /* Desactiva la interacción con la barra oculta */
+    
+    }
+
+
+/* ----------------------------------------------------
+ 2.1 Sección de Contacto en la Barra Superior(Estilos)
+------------------------------------------------------ */
+
+.nav-contacto {
+    display: flex; /* Alinea los elementos de contacto en una fila */
+    flex-wrap: wrap;
+    gap: 15px; /* Espaciado uniforme entre elementos */
+    list-style: none; /* Elimina viñetas predeterminadas */
+    padding: 0;
+    margin-left: 2rem;
+    
+   
+}
+
+.nav-contacto a {
+    color: #829DB5; /* Color distintivo para enlaces de contacto */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+   
+}
+
+/* Cambiar el color de las palabras Teléfonos y Email */
+.nav-contacto i {
+    color: #829DB5;
+    margin-right: 0.5rem; /* Ajusta el valor según el espacio que quieras */
+} 
+
+.top-bar {
+    border-bottom: 1px solid #829DB5;
+    padding-bottom: 0.1rem; /* Opcional, para separar un poco */
+}
+
+/* --------------------------------------------
+ 2.2  Redes Sociales en la Barra Superior
+-----------------------------------------------*/
+
+.social-links {
+    display: flex; /* Alinea los iconos de redes sociales en una fila */
+    gap: 20px; /* Espaciado uniforme entre iconos */
+    
+}
+
+.social-links a {
+    color: #1A202C;             /* Color del ícono */
+    font-size: 0.8rem;            /* Tamaño del ícono */
+    transition: all 0.3s ease;  /* Efecto suave */
+    background-color: #829DB5;  /* Fondo gris */
+    border-radius: 50%;         /* Completamente redondeado */
+    padding: 10px;              /* Espaciado interno para hacerlo circular */
+    display: inline-flex;       /* Para centrar el ícono */
+    align-items: center;        /* Centra el contenido verticalmente */
+    justify-content: center;    /* Centra el contenido horizontalmente */
+    width: 0.2rem;                /* Tamaño del círculo */
+    height: 0.2rem;               /* Tamaño del círculo */
+    text-decoration: none;      /* Elimina el subrayado */
+}
+
+
+.social-links a:hover {
+    background-color: #09111D;  /* Color de fondo al pasar el mouse */
+    color: white;               /* Mantener el color blanco de los íconos */
+    border-radius: 30%;         /* Mantener el borde redondeado */
+    padding: 8px 12px;          /* Mantener un tamaño más pequeño incluso en hover */
+    transform: scale(1.1);      /* Agranda ligeramente el área para un efecto sutil */
+}
+
+
+/* ===================================================================
+🎯 3) MENÚ DE NAVEGACIÓN PRINCIPAL
+=======================================================================
+💼 **Propósito:**
+- El menú de navegación principal incluye el logo de la empresa y las opciones de navegación para que los usuarios puedan acceder a las diferentes secciones del sitio web de manera sencilla.
+
+🌟 **Comportamiento:**
+- El menú está diseñado para ser responsive y accesible, adaptándose a diferentes tamaños de pantalla.
+- Cuando se hace scroll, la barra de navegación se fija en la parte superior de la pantalla para garantizar que siempre esté accesible al usuario.
+
+⚙️ **Estilo y Comportamiento:**
+- **Logo:** El logo tiene un tamaño fijo para mantener la proporción en el diseño.
+- **Lista de navegación:** Los elementos del menú están alineados horizontalmente y tienen un espaciado uniforme.
+- **Interacción:** El color de los enlaces del menú cambia de fondo y texto cuando el usuario pasa el mouse por encima para ofrecer una experiencia interactiva.
+
+🖋️ **Detalles Técnicos:**
+```css
+
+/* ================================================  
+3) MENÚ DE NAVEGACIÓN PRINCIPAL
+   Contiene el logo y las opciones de navegación.
+================================================ */
+
+.nav-bar {
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: space-between; /* Separa el logo y el menú */
+    align-items: center; /* Alineación vertical centrada */
+    background-color: #1A202C; /* Color de fondo neutro */
+    padding: 5px 20px; /* Espaciado interno para mejor distribución */
+    transition: top 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Transiciones suaves */
+    z-index: 1050 !important; /* Asegura que siempre esté por encima de Swiper */
+    position: relative; /* Asegura que no sea afectado por cambios en Swiper */
+    height: 5rem;
+}
+
+/* Fijar la barra de navegación cuando se oculta la top-bar */
+.nav-bar.fixed {
+    position: fixed;
+    top: 0; /* Fija el menú en la parte superior */
+    width: 100%; /* Asegura que el menú cubra todo el ancho */
+    /* background-color: #829DB5;  */
+    z-index: 1000; /* Mantiene la barra por encima del resto del contenido */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil al menú */
+}
+
+/* ------------------------------------ 
+Logo de la Empresa
+------------------------------------ */
+.imagen-logo {
+    width: 15rem; /* Ancho fijo para mantener la proporción */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    margin-left: 3rem;
+}
+
+/* ------------------------------------
+Lista de Navegación
+------------------------------------ */
+.nav-list {
+    display: flex; /* Alinea los elementos del menú en una fila */
+    gap: 15px; /* Espaciado uniforme entre elementos */
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------
+Estilos de los Ítems del Menú
+------------------------------------ */
+
+
+.menu-item a {
+    position: relative; /* Necesario para posicionar el subrayado de manera absoluta */
+    text-decoration: none; /* Eliminar subrayado por defecto */
+    color: white; /* Color del texto normal (puedes cambiarlo según tu diseño) */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    padding: 8px 12px;
+}
+/* Cambio de color y fondo al pasar el mouse */
+.menu-item a:hover {
+    
+    color:#829DB5; /* Cambio de color de texto para mayor contraste */
+    
+    
+}
+
+
+
+/* Subrayado animado */
+.menu-item a::after {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posición absoluta para el subrayado */
+    bottom: 0; /* Coloca el subrayado en la parte inferior del enlace */
+    left: 0;
+    width: 0; /* El subrayado comienza con un ancho de 0 */
+    height: 2px; /* Altura del subrayado */
+    background-color: #829DB5; /* Color del subrayado */
+    transition: width 0.3s ease; /* Transición suave para el ancho del subrayado */
+}
+
+
+.menu-item a:hover::after {
+    width: 100%; /* Al hacer hover, el subrayado se extiende a todo el ancho del enlace */
+}
+
+
+
+
+
+
+
+
+
+/*************************************** 
+ * 4) ESTILOS SECCION INICIO 
+
+ 4.1) ESTILOS SECCION INICIO (BENEFICIOS) *
+ **************************************/
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #D3D3D3; /* Fondo ligeramente gris */
+    text-align: center;
+    position: relative; /* Necesario para posicionar los botones en la parte inferior */
+}
+
+.beneficio {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex: 0 0 32%; /* Cada beneficio ocupará el 32% del ancho */
+    margin: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease-in-out; /* Transición suave */
+    width: 300px; /* Ajusta según el tamaño deseado */
+    min-height: 200px; /* Mantén la misma altura para todos */
+    
+   
+    
+    
+}
+
+.beneficio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más prominente en hover */
+}
+
+.beneficio i {
+    font-size: 40px;
+    color:#829DB5; /* Azul corporativo */
+    margin-bottom: 10px; /* Espaciado adicional */
+    transition: transform 0.3s ease-in-out; /* Transición suave en el icono */
+}
+
+.beneficio i:hover {
+    transform: scale(1.1); /* Efecto de aumentar el tamaño en hover */
+}
+
+.beneficio h3 {
+    font-weight: 500; /* Ajusta según lo que necesites (400 es normal, 500 es intermedio) */
+    font-size: 18px; /* Puedes reducir el tamaño si es necesario */
+    color: #829DB5;
+    margin-bottom: 10px;
+    
+}
+
+.beneficio p {
+    color: #666;
+    font-weight: 400; /* Ajusta según lo que necesites (400 es normal, 500 es intermedio) */
+    font-size: 14px; /* Puedes reducir el tamaño si es necesario */
+    font-family: 'Gilroy';
+}
+
+/* Estilo profesional para el subtítulo */
+.titulo-beneficios {
+    font-size: 28px; /* Tamaño equilibrado para subtítulos */
+    font-weight: 100;
+    font-family:'Girlroy Medium',; /* Usar Gilroy Regular */
+    color: #09111D; /* Azul oscuro elegante */
+    margin-bottom: 20px;
+    letter-spacing: 1.2px; /* Mayor claridad en la lectura */
+    line-height: 1.4; /* Espaciado entre líneas óptimo */
+    text-align: center; /* Centrado */
+    width: 100%;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(-20px); /* Pequeño desplazamiento hacia arriba */
+    animation: fadeInMove 1.2s ease-in-out forwards; /* Animación sutil */
+}
+
+/* Animación para la aparición fluida del subtítulo */
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilos para el carrusel (Swiper de trabajar con nosostros) */
+.swiper-container {
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    transition: all 0.5s ease;
+    overflow: visible !important; /* Evita que Swiper oculte elementos fuera de su área */
+    position: relative;
+    z-index: 1; /* Mantiene Swiper debajo del menú */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    align-items: center;
+    height: auto; /* O fija un valor si es necesario */
+    padding: 10px; /* Espacio entre tarjetas */
+}
+
+
+
+
+
+.swiper-button-next {
+    right: 20px; /* Flecha derecha desplazada 20px desde el borde derecho */
+}
+
+.swiper-button-prev {
+    left: 20px; /* Flecha izquierda desplazada 20px desde el borde izquierdo */
+}
+
+
+
+
+/* Ajustes para el Swiper */
+/* .swiper {
+    width: 80%;
+    padding-bottom: 30px;
+} */
+
+
+
+.swiper-pagination-bullet-active {
+    background: #829DB5;
+       
+}
+
+
+
+
+/* Personaliza las flechas de navegación */
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    color: #829DB5; /* Fuerza el cambio de color */
+    font-size: 24px !important; /* Asegura el tamaño de la flecha */
+}
+
+
+
+
+/************************************************ 
+ *4.2 ESTILOS SECCION INICIO (PREGUNTAS Y RESPUESTA)
+
+ ************************************************/
+/* Estilos Generales de Preguntas Frecuentes */
+
+.faq-container{
+    /* display: block; */
+    width: 70%;
+    margin: 0 auto; /* Centra horizontalmente */
+    
+}
+
+.faq {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color:  #09111D;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Gilroy Regular';
+    background-color:  #09111D;
+    margin: 0 auto; /* Asegura que se mantenga centrado */
+    padding: 1rem 0; /* Espaciado para que se vea mejor */
+}
+
+
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color:  #2c3443;   
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative; /* Para posicionar la flecha correctamente */
+    font-family: 'Gilroy';
+    font-style: normal;
+    
+}
+
+.faq-question:hover {
+    background-color: #2980b9;
+}
+
+.arrow {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: #ffffff;
+    letter-spacing: -0.5px; /* Ajusta el espaciado entre caracteres */
+    font-weight: lighter;     /* Asegura que la flecha sea más delgada */
+}
+
+
+
+
+
+/* Estilos de las respuestas */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color:  #09111D;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Gilroy';
+    font-style: normal;
+    color: #ffffff;
+    width: 100%; /* Para que las respuestas también ocupen todo el ancho del contenedor */
+    
+}
+
+/* Mostrar respuesta cuando se activa */
+.faq-answer.show {
+    display: block;
+}
+
+/* Estilos para la rotación de la flecha */
+.faq-question.active .arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-item .faq-answer p {
+    margin: 0;
+}
+
+
+/**************************************** 
+ *4.3) ESTILOS SECCION INICIO (TESTIMONIOS)
+ ***************************************/
+ .testimonios {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D3D3D3;
+    font-family: 'Gilroy';
+    font-style: medium;
+    
+}
+
+.testimonios-title{
+    font-family: 'Gilroy';
+}
+.testimonio-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; /* Mantiene el tamaño relativo al slider */
+    max-width: 300px; /* Tamaño uniforme */
+    height: 300px; /* Altura fija para que todas sean iguales */
+    justify-content: space-between; /* Distribuye el contenido */
+    
+}
+
+/* Imagen de perfil */
+.testimonio-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.testimonio-card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: 'Gilroy';
+    font-style: medium;
+    color: #829DB5;
+}
+
+.cargo {
+    font-size: 14px;
+    font-family: 'Gilroy';
+    font-style: medium;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.testimonio-card hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+}
+
+.comentario {
+    flex-grow: 1; /* Ocupa el espacio disponible */
+    font-family: 'Gilroy';
+    font-style: italic; 
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.clientes-frase {
+    color: #829DB5; /* Cambia este color al que prefieras */
+    font-weight:lighter; /* Si quieres resaltarlo más */
+    font-size: 1.2rem; /* Ajusta el tamaño de la letra */
+    margin: 1rem;
+}
+
+
+
+/* Estilo para las iniciales */
+.foto-iniciales {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff; /* Color de fondo del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto;
+    display: none; /* Oculto por defecto */
+}
+
+
+
+
+
+/* Mostrar iniciales si no hay imagen */
+.testimonio-card img[src=""] + .foto-iniciales {
+    display: flex; /* Mostrar el círculo con las iniciales */
+}
+
+
+
+/*********************************
+ * 5) ESTILOS SECCION NOSOTROS
+ *********************************/
+
+/* Estilos de la introducción */
+.intro-section {
+    text-align: center;
+    /* background: linear-gradient(#829DB5, #D3D3D3); */
+    background-color: #829DB5;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Gilroy';
+    font-style: medium;
+}
+
+.intro-section p {
+    color: #fff;
+}
+
+/* Contenedor de la sección Nosotros */
+.containerNosotros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Estilos de las tarjetas dentro de la sección Nosotros */
+.card {
+    /* background-color: #D3D3D3; */
+    background: linear-gradient(#829DB5, #D3D3D3);
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #1A202C;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #829DB5;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card i {
+    color:  #D3D3D3;
+     font-size: 2rem;
+    margin-right: 2rem;
+}
+
+
+/* Estilos para la sección Nosotros */
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+}
+
+.nosotros .acerca-de-nosotros {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: #000;
+}
+
+/* Estilos para la imagen titular */
+.foto-titular {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+}
+
+/* Estilos para el contenedor titular de estudio */
+.titular-estudio {
+    background: linear-gradient(to right, #f0f4f9, #e6edf7);
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+/* Estilos de la sección titular con diseño de cuadrícula */
+.titular-estudio .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos del título en la sección titular */
+.titular-estudio .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 0;
+    text-align: left;
+}
+
+/* Estilos del contenido textual en la sección titular */
+.titular-estudio .text-content {
+    text-align: justify;
+}
+
+/* Estilos de los párrafos en la sección titular */
+.titular-estudio .intro-text,
+.titular-estudio .details-text {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+
+/******************************
+ * 6) ESTILOS SECCION BLOG*
+ ******************************/
+
+/* Contenedor principal del blog */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos generales para las tarjetas del blog */
+.blog-card {
+    /* font-family: 'Poppins', sans-serif;  */
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-style: normal;
+    
+    
+}
+
+/* Títulos dentro de las tarjetas */
+.blog-card h2 {
+    margin: 0 0 10px;
+    color: #09111D;
+}
+
+/* Resumen del artículo dentro de la tarjeta */
+.blog-card .summary {
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Contenido completo del artículo (oculto inicialmente) */
+.full-content {
+    display: none;
+}
+
+.blog-card ul {
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    /* font-family: 'Poppins', sans-serif; */
+    margin-left: 20px; /* Espacio entre las listas */
+}
+
+.blog-card li {
+    margin-left: 10px; /* Espacio entre los ítems */
+}
+
+/* Estilo específico para las sublistas */
+.blog-card ul ul {
+    list-style-type: lower-alpha; /* Letras a, b, c, etc. para sublistas */
+    margin-left: 30px; /* Aumentar el margen para diferenciar la sublista */
+}
+
+/* Si quieres un ícono diferente para la lista principal (como el check) */
+.blog-card li::before {
+    content: '✔';  /* Carácter Unicode para check */
+    margin-right: 10px; /* Espacio entre el check y el texto */
+    font-size: 1.2em; /* Tamaño del check */
+    color: #007bff; /* Color del check */
+}
+
+/* Estilo para los elementos de la sublista */
+.blog-card .sublista li::before {
+    content: '';  /* Sin contenido por defecto en la sublista */
+}
+
+/* Opcional: Si quieres que el texto de la sublista tenga un estilo diferente */
+.blog-card .sublista li {
+    font-style: italic;
+}
+  
+
+/* Botón de "Leer más" */
+button.read-more {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el hover del botón */
+button.read-more:hover {
+    background: #0056b3;
+}
+
+/* Estilos para la fecha del artículo */
+.date {
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 10px;
+}
+
+
+/****************************************
+ * 7) ESTILOS DE SECCION SERVICIOS
+ ***************************************/
+  
+ .servicios1,.servicios2 {
+    width: 15rem;
+    height: 15rem;
+ }
+
+ /* Servicios: mejor manejo de espacio */
+.servicios {
+    display: flex;
+    gap: 2.5rem; /* Espacio entre imágenes */
+    justify-content: center;
+}
+
+ .servicios2 {
+    display: flex;
+    gap: 2.5rem; /* Espacio entre imágenes */
+    justify-content: center;
+}
+
+
+
+
+li {
+    margin-bottom: 10px;
+    /* color: gray; */
+}
+
+
+.container-section{
+    max-width: 992px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-col{
+    max-width :33%;
+    padding: 0 10px;
+    margin-bottom: 3rem;
+}
+
+
+.main-col ul li {
+    list-style: none;
+    margin-left: 0;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    color: gray;
+    font-style: italic;
+}
+
+/*Estilos a las viñetas de cada elemento citado en el texto*/
+.main-col ul li::before{
+    content: "\2713";
+    margin-right: 10px;
+    font-size: 14px;
+    color:#32dbc6;
+}
+
+
+/* Estilos generales de texto */
+p {
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: gray;
+    
+}
+
+p strong {
+    font-weight: 500;
+    color: #32dbc6;
+   
+}
+
+/****************************************
+ * ESTILOS DE IMÁGENES FONDO (Secciones)
+ ***************************************/
+
+/* Contenedor que ocupa todo el ancho y se adapta a la altura de la pantalla */
+.contenedoraInicio {
+    height: 80vh; /* Asegura que no ocupe más del 80% de la pantalla */
+    overflow: hidden; /* Evita que desborde */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: url('../img/fondo.jpg') center/cover no-repeat;
+    
+}
+
+
+
+
+/* Capa de opacidad */
+.contenedoraInicio::before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura semitransparente */
+}
+
+
+.fondoNosotros {
+    background: url('../img/nosotros.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 40vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+
+.fondoContacto {
+    background: url('../img/contacto.jpg') center no-repeat;
+    background-size: 100% auto;/* Asegura que ocupe todo el ancho sin deformarse */
+    height: 40vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    background-position: center -9rem; /* Ajusta la imagen hacia arriba */
+}
+
+.fondoServicios {
+    background: url('../img/servicios1.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 40vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+
+.fondoBlog {
+    background: url('../img/blog.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 40vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+
+
+
+
+  
+ 
+ 
+
+
+
+
+
+
+
+
+/******************************
+ * 8) ESTILOS DE CONTACTO
+ ******************************/
+ .contactos {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+}
+
+.map {
+    margin-bottom: 2rem;
+    border: solid 1px #000;
+    flex: 1; /* El mapa ocupa todo el espacio disponible en el contenedor */
+    max-width: 60%;
+}
+
+.datos {
+    width: 35%; /* Ajusta según sea necesario */
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: medium;
+}
+
+.datos p {
+    margin-bottom: 1rem;
+}
+
+.datos a {
+    text-decoration: none; /* Quita el subrayado de los enlaces dentro de .datos */
+    color: #007bff; /* Cambia el color del texto del enlace */
+}
+
+
+
+
+
+
+
+
+/******************************
+ * 9) ESTILOS DE FOOTER*
+ ******************************/
+
+/* Footer principal */
+.footer {
+    /*background-color: #00387a;  Fondo azul del footer */
+    background-color:#829DB5;
+    padding: 70px 0; /* Relleno superior e inferior */
+}
+
+.footer-container {
+    max-width: 1170px; /* Ancho máximo del contenedor */
+    margin-bottom: 5rem; /* Separación inferior del contenedor */
+}
+
+.row {
+    display: flex; /* Usa Flexbox para organizar elementos */
+    flex-wrap: wrap; /* Permite que los elementos pasen a una nueva línea si es necesario */
+}
+
+/* Listas en el footer */
+ul {
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    margin: 0; /* Elimina cualquier margen exterior */
+    padding-left: 0; /* Elimina cualquier padding izquierdo */
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista excepto el último */
+}
+
+.footer-col ul li a {
+    position: relative; /* Necesario para el pseudo-elemento */
+    font-size: 16px; /* Tamaño de fuente para los enlaces */
+    text-transform: capitalize; /* Primera letra en mayúscula */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: 300; /* Peso ligero para el texto */
+    color: #ffffff;
+    /*color: #bbbbbb;  Color gris claro */
+    display: inline-block; /* Esto evita que el subrayado ocupe todo el ancho del contenedor */
+    /*display: block;  Cada enlace ocupa toda la línea */
+    transition: all 0.3s ease; /* Transición suave en los cambios de estilo */
+}
+
+.footer-col ul li a::after {
+    content: ''; /* Pseudo-elemento para la línea */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D3D3D3; /* Color del subrayado */
+    transition: width 0.3s ease; /* Efecto de animación */
+}
+
+
+
+.footer-col ul li a:hover::after {
+    width: 100%; /* Expande el subrayado al ancho completo */
+}
+
+
+/* Títulos en el footer */
+.footer-col h4 {
+    font-size: 18px; /* Tamaño de fuente del título */
+    color: #ffffff; /* Color blanco */
+    text-transform: capitalize; /* Primera letra en mayúscula */
+    margin-bottom: 35px; /* Espacio debajo del título */
+    font-weight: 500; /* Peso medio del texto */
+    position: relative; /* Posición relativa para incluir estilos decorativos */
+}
+
+.footer-col h4::before {
+    content: ''; /* Crea un elemento visual decorativo */
+    position: absolute; /* Posiciona el elemento relativo al título */
+    left: 0; /* Alineado a la izquierda */
+    bottom: -10px; /* Debajo del texto */
+    /* background-color: #e91e63; */
+    border-bottom: 1px solid #87b8e2;
+    height: 2px; /* Altura de la línea */
+    box-sizing: border-box; /* Incluye el borde en las dimensiones */
+    width: 100px; /* Longitud de la línea */
+}
+
+/* Estilos de las columnas */
+.footer-col {
+    width: 25%; /* Cada columna ocupa un 25% del ancho total */
+    padding: 0 15px; /* Espaciado interno en los laterales */
+}
+
+/* Redes sociales */
+
+.footer-col .social-links a {
+    display: inline-block; /* Cada enlace se comporta como un bloque en línea */
+    height: 2rem; /* Altura del enlace */
+    width: 2rem; /* Ancho del enlace */
+    margin: 0 10px 10px 0; /* Espaciado entre enlaces */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    /*line-height: 40px;  Centra verticalmente el contenido */
+    border-radius: 50%; /* Bordes redondeados (círculo) */
+    color:#829DB5;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b; /* Cambia el color del icono a gris oscuro */
+    background-color: #ffffff; /* Cambia el fondo a blanco */
+}
+
+/* Derechos reservados */
+.derechos {
+    padding: 20px 0; /* Relleno superior e inferior */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Tamaño de fuente pequeño */
+    color: #ffffff;
+}
+
+/* Separador */
+hr {
+    border: 1px solid rgb(141, 141, 141); /* Color gris para la línea */
+    margin-bottom: 20px 0; /* Espacio alrededor de la línea */
+}
+
+
+/* =================================================================*/
+
+
+/* 🔹 Logo */
+/* .imagen-logo {
+    width: 150px;
+} */
+
+/* 🔹 Botón de hamburguesa */
+.abrir-menu {
+    display: none; /* Oculto en escritorio */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* 🔹 Botón de cerrar menú */
+.cerrar-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* 🔹 Diseño responsive para móviles */
+@media screen and (max-width: 768px) {
+    .abrir-menu {
+        display: block; /* Se muestra en móviles */
+    }
+
+
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav-contacto {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+    
+    .nav-menu {
+        position: fixed; /* Se mantiene fijo en la pantalla */
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #00387a;
+        padding-top: 4rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000; /* Asegurar que esté sobre Swiper */
+        overflow-y: auto; /* Permite desplazamiento si el contenido es largo */
+    }
+    
+    /* Cuando el menú está abierto */
+    .nav-menu.visible {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        display: flex; /* Asegurar que el contenido se vea */
+        flex-direction: column;
+    }
+
+   
+    
+
+    .cerrar-menu {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list a {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+/* 🔹 Ajustar imágenes */
+.imagen-logo {
+    width: 120px;
+}
+
+.imagen0, .servicios1, .servicios2, .imagen3 {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+
+/* 🔹 Ajustar el footer */
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Asegura que todo se alinee a la izquierda */
+    text-align: left; /* Hace que el texto de las listas y títulos quede alineado */
+    margin-left: 0.5rem;
+    
+}
+
+.footer-container .row {
+    flex-direction: column; /* Pone los elementos en columna */
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    text-align: left; /* Asegura que los textos también estén alineados a la izquierda */
+}
+
+.footer-col {
+    width: 25%;
+    margin-bottom: 1.1rem;
+    text-align: left;
+}
+
+ .footer-col h4 {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left; /* Importante para móviles */
+ } 
+
+.footer-col h4::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; /* Mantiene la línea a la izquierda */
+    bottom: -5px; 
+    background-color: #e91e63;
+    height: 2px;
+    width: 50px;
+}
+
+
+/* Asegurar que las listas también se alineen */
+.footer-col ul {
+    padding-left: 0;
+}
+
+.footer-col ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+}
+
+/* Redes sociales alineadas */
+.footer-col .social-links {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    gap: 15px;
+    
+}
+
+
+
+
+
+
+/* 🔹 Espaciado en secciones */
+.main-container {
+    padding: 1rem;
+}
+
+.beneficios, .faq, .testimonios {
+    padding: 2rem 1rem;
+} 
+    
+}
+
