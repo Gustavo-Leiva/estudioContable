@@ -2064,35 +2064,7 @@ hr {
   .footer-col .social-links {
     justify-content: center;
   }
-
-}
-
-
-
-@media (max-width: 390px) {
-  .swiper-container {
-    padding: 0;
-  }
-
-  .swiper-slide {
-    width: 100% !important;
-    padding: 0.5rem;
-  }
-
-  .beneficio h3 {
-    font-size: 1rem;
-  }
-
-  .beneficio p {
-    font-size: 0.85rem;
-    line-height: 1.3;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 9rem;
-    font-size: 1.2rem;
-  }
+  
 }
 
 
