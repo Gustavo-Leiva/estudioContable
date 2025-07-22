@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         slidesPerView: 1, // Número de slides por vista
         spaceBetween: 2, // Espacio entre los slides
-        centeredSlides: false,  // Evita que queden centrados
+         centeredSlides: false,  // Evita que queden centrados
         loop: false,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
              320: {
                 slidesPerView: 1,
-                spaceBetween: 2,
+                spaceBetween: 0,
             }
         },
     });
