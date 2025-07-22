@@ -400,7 +400,6 @@ Estilos de los Ítems del Menú
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 10px;
-    overflow-x: hidden;
     background-color: #D3D3D3; /* Fondo ligeramente gris */
     text-align: center;
     position: relative; /* Necesario para posicionar los botones en la parte inferior */
@@ -495,7 +494,6 @@ Estilos de los Ítems del Menú
     overflow: visible !important; /* Evita que Swiper oculte elementos fuera de su área */
     position: relative;
     z-index: 1; /* Mantiene Swiper debajo del menú */
-       
 }
 
 .swiper-slide {
@@ -1460,404 +1458,57 @@ hr {
 
 
 
-@media (max-width: 400px) {
-  /* HEADER Y MENU */
-  .abrir-menu {
-    display: block;
-  }
 
-  .top-bar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-  }
 
-  .nav-contacto {
-    flex-direction: column;
-    gap: 5px;
-  }
 
-  .social-links {
-    margin-top: 0.1rem;
-  }
 
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100vh;
-    background-color: #00387a;
-    padding-top: 4rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    overflow-y: auto;
-  }
 
-  .nav-menu.visible {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-  }
 
-  .cerrar-menu {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
 
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Footer responsive para pantallas pequeñas */
+@media (max-width: 991px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
-  .nav-list a {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
+    .footer-col h4::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-  .imagen-logo {
-    width: 120px;
-  }
-
-  .imagen0,
-  .servicios1,
-  .servicios2,
-  .imagen3 {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .leyenda {
-    color: #fefefe;
-  }
-
-  /* FOOTER */
-  .footer-col {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer-col h4::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .footer-col .social-links {
-    justify-content: center;
-  }
-
-  .footer-col ul li {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  /* CAROUSEL VENTAJAS */
-  .beneficio {
-    padding: 1rem;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
-  }
-
-  .beneficio i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #00387a;
-  }
-
-  .beneficio h3 {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-  }
-
-  .beneficio p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  .swiper-container {
-    width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-  }
-
-  .swiper-slide {
-    width: 100% !important;
-    box-sizing: border-box;
-    z-index: 1;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: 10rem;
-    font-size: 1.5rem;
-    color: #00387a;
-    z-index: 10;
-  }
-
-  .swiper-button-prev {
-    left: 1rem;
-  }
-
-  .swiper-button-next {
-    right: 1rem;
-  }
-
-  .custom-carousel-container {
-    width: 100%;
-    padding: 0 1rem;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .custom-carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .custom-slide {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    padding: 1rem;
-  }
-
-  /* SECCIÓN ACERCA DE NOSOTROS */
-  .fondoNosotros {
-    background: url('../img/nosotros.jpg') no-repeat;
-    background-size: 100% auto;
-    height: 30vh;
-    width: 100vw;
-  }
-
-  .titular-estudio {
-    height: auto;
-    padding: 2rem 1rem;
-  }
-
-  .titular-estudio .container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .foto-titular {
-    margin: 0 auto 1rem;
-    max-width: 150px;
-  }
-
-  .titular-estudio .text-content {
-    width: 100%;
-    text-align: justify;
-  }
-
-  .titular-estudio .intro-text,
-  .titular-estudio .details-text {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  /* SECCIÓN SERVICIOS */
-  .fondoServicios {
-    background: url('../img/servicios.jpg') center no-repeat;
-    background-size: 100% auto;
-    height: 24vh;
-    width: 100vw;
-  }
-
-  .container-section {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .main-col {
-    max-width: 100% !important;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 1.5rem;
-  }
-
-  .main-col h2 {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .main-col ul li {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  .servicios1,
-  .servicios2 {
-    width: 100%;
-    height: auto;
-    margin: 1rem auto;
-    display: block;
-    border-radius: 10px;
-  }
-
-  /* SECCIÓN BLOG */
-  .fondoBlog {
-    background: url('../img/blog.jpg') center bottom no-repeat;
-    background-size: 100% auto;
-    height: 28vh;
-    width: 100vw;
-  }
-
-  /* SECCIÓN CONTACTO */
-  .imagenContenedora {
-    padding: 1rem;
-  }
-
-  .fondoContacto {
-    background: url('../img/contacto.jpg') no-repeat;
-    background-size: 100% auto;
-    height: 32vh;
-    width: 100vw;
-    margin-bottom: 1rem;
-  }
-
-  .ubicacion {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .map {
-    max-width: 95%;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  .datos {
-    width: 100%;
-    padding: 0 1rem;
-    text-align: center;
-  }
-
-  .datos h3 {
-    font-size: 1.1rem;
-  }
-
-  .datos p {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 490px) {
- .fondoContacto {
-    background: url('../img/contacto.jpg') no-repeat;
-    background-size: 100% auto;
-    height: 28vh;
-    width: 100vw;
-    margin-bottom: 1rem;
-  } 
-
+    .footer-col .social-links {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
-  .footer-col {
-    width: 100%;
-    padding: 0 10px;
-  }
+    .footer-col {
+        width: 100%;
+        padding: 0 10px;
+    }
 
-  .footer {
-    padding: 40px 15px;
-  }
+    .footer {
+        padding: 40px 15px;
+    }
 
-  .footer-container {
-    margin-bottom: 3rem;
-  }
+    .footer-container {
+        margin-bottom: 3rem;
+    }
 
-  .footer-col h4::before {
-    width: 50%;
-  }
+    .footer-col h4::before {
+        width: 50%;
+    }
 
-  .footer .social-links a {
-    margin: 0 5px 10px 5px;
-  }
-
-  .swiper-container {
-    padding: 0 1rem;
-  }
-
-  .swiper-slide {
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-  }
-
-  .swiper-wrapper {
-    margin: 0;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .swiper-button-prev {
-    left: 5px;
-  }
-
-  .swiper-button-next {
-    right: 5px;
-  }
-
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .titular-estudio .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .titular-estudio .foto-titular {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  .titular-estudio .text-content {
-    padding: 0 1rem;
-  }
+    .footer .social-links a {
+        margin: 0 5px 10px 5px;
+    }
 }
 
 
 @media screen and (min-width: 401px) and (max-width: 768px) {
-  /* HEADER Y MENU */
+  /* Header y menú */
   .abrir-menu {
     display: block;
   }
@@ -1928,10 +1579,7 @@ hr {
     width: 120px;
   }
 
-  .imagen0,
-  .servicios1,
-  .servicios2,
-  .imagen3 {
+  .imagen0, .servicios1, .servicios2, .imagen3 {
     width: 100%;
     margin-top: 2rem;
   }
@@ -1940,9 +1588,7 @@ hr {
     color: #fefefe;
   }
 
-  
-
-  /* FOOTER */
+  /* Footer con 2 columnas */
   .footer-container .row {
     flex-wrap: wrap;
     justify-content: center;
@@ -1969,14 +1615,12 @@ hr {
     text-align: center;
   }
 
-  /* SECCIONES Y SLIDERS */
+  /* Secciones y sliders */
   .main-container {
     padding: 1rem;
   }
 
-  .beneficios,
-  .faq,
-  .testimonios {
+  .beneficios, .faq, .testimonios {
     padding: 2rem 1rem;
   }
 
@@ -2012,11 +1656,323 @@ hr {
     width: 90%;
     margin: 0 auto;
   }
+}
 
 
 
+/* 🔹 Para pantallas chicas menores a 400px: 1 columna por fila */
+@media (max-width: 400px) {
+  /*
+  *****HEADER Y MENU*****
+  */
+
+  .abrir-menu {
+    display: block;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .nav-contacto {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .social-links {
+    margin-top: 0.1rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #00387a;
+    padding-top: 4rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .nav-menu.visible {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cerrar-menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .imagen-logo {
+    width: 120px;
+  }
+
+  .imagen0, .servicios1, .servicios2, .imagen3 {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .leyenda {
+    color: #fefefe;
+  }
+
+
+ /*
+ *****FOOTER******
+ */
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-col h4::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-col .social-links {
+    justify-content: center;
+  }
+
+  .footer-col ul li {
+    margin-left: 0;
+    text-align: center;
+  }
   
-  .ubicacion {
+
+
+  /*
+  ****CARUSEELL (VENTAJAS)  
+  */
+
+
+   .beneficio {
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+
+  .beneficio i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #00387a;
+  }
+
+  .beneficio h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+
+  .beneficio p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+
+  .swiper-container {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+
+  /* Botones de navegación Swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+     position: absolute;
+    top: 10rem; /* ✅ Baja las flechas — podés ajustar este valor */
+    font-size: 1.5rem;
+    color: #00387a;
+    z-index: 10;
+  }
+
+  .swiper-button-prev {
+    left: 1rem; /* Más afuera del slide */
+  }
+
+  .swiper-button-next {
+     right: 1rem;
+  }
+
+   /* Para que no tapen el contenido */
+  .swiper-slide {
+    z-index: 1;
+  }
+
+
+
+ 
+
+
+
+  /* === CARUSEL (OPINIONES) === */
+  .custom-carousel-container {
+  width: 100%;
+  padding: 0 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.custom-slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+
+
+/* === SECCIÓN ACERCA DE NOSOTROS === */
+
+.fondoNosotros {
+    background: url('../img/nosotros.jpg') no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 30vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    
+}
+
+.titular-estudio {
+    height: auto; /* No uses altura fija */
+    padding: 2rem 1rem;
+  }
+
+  .titular-estudio .container {
+    grid-template-columns: 1fr; /* Una sola columna */
+    text-align: center;
+  }
+
+  .foto-titular {
+    margin: 0 auto 1rem;
+    max-width: 150px;
+  }
+
+  .titular-estudio .text-content {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .titular-estudio .intro-text,
+  .titular-estudio .details-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+
+   /* === SECCIÓN SERVICIOS === */
+
+ .fondoServicios {
+    background: url('../img/servicios.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 24vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+} 
+.container-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .main-col {
+    max-width: 100% !important;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-col h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .main-col ul li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .servicios1,
+  .servicios2 {
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+ /* === SECCIÓN BLOG === */
+
+  .fondoBlog {
+    background: url('../img/blog.jpg') center bottom no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 28vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    }
+
+
+   /* === SECCIÓN CONTACTO === */
+  
+  .imagenContenedora{
+    padding: 1rem;
+  } 
+  
+    .fondoContacto {
+    background: url('../img/contacto.jpg') no-repeat;
+    background-size: 100% auto;/* Asegura que ocupe todo el ancho sin deformarse */
+    height: 32vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    margin-bottom: 0;
+   /*background-position:center 0%; Ajusta la imagen hacia arriba */
+   
+}
+
+.ubicacion {
     flex-direction: column;
     align-items: center;
   }
@@ -2042,28 +1998,48 @@ hr {
     font-size: 0.95rem;
   }
 
-  
+  @media (max-width: 576px) {
+
+ 
+  .swiper-container {
+    padding: 0 1rem;         /* Reduce espacio lateral */
+    
+  }
+
+  .swiper-slide {
+    max-width: 100%;         /* Evita que se vea parte del siguiente */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;              /* Sin padding adicional */
+  }
+
+  .swiper-wrapper {
+    margin: ;               /* Elimina espacios laterales */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-button-prev {
+    left: 5px;               /* Ajusta para que quede justo afuera */
+  }
+
+  .swiper-button-next {
+    right: 5px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px;         /* Tamaño legible pero compacto */
+  }
 }
 
-@media (max-width: 991px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-    text-align: center;
-  }
 
-  .footer-col h4::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .footer-col .social-links {
-    justify-content: center;
-  }
 }
-
-
-
-
-
-

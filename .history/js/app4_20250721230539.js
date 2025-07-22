@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 1, // Un slide visible en pantallas pequeñas
                 spaceBetween: 10,
             },
+             320: {
+                slidesPerView: 1,
+                spaceBetween: 5,
+            }
         },
     });
 });

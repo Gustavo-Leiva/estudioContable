@@ -495,7 +495,7 @@ Estilos de los Ítems del Menú
     overflow: visible !important; /* Evita que Swiper oculte elementos fuera de su área */
     position: relative;
     z-index: 1; /* Mantiene Swiper debajo del menú */
-       
+      box-sizing: border-box;
 }
 
 .swiper-slide {

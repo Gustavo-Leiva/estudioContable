@@ -401,6 +401,7 @@ Estilos de los Ítems del Menú
     flex-wrap: wrap;
     padding: 50px 10px;
     overflow-x: hidden;
+  padding: 0 10px;
     background-color: #D3D3D3; /* Fondo ligeramente gris */
     text-align: center;
     position: relative; /* Necesario para posicionar los botones en la parte inferior */
@@ -495,7 +496,6 @@ Estilos de los Ítems del Menú
     overflow: visible !important; /* Evita que Swiper oculte elementos fuera de su área */
     position: relative;
     z-index: 1; /* Mantiene Swiper debajo del menú */
-       
 }
 
 .swiper-slide {

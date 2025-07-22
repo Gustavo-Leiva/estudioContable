@@ -26,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         slidesPerView: 1, // Número de slides por vista
         spaceBetween: 0, // Espacio entre los slides
-         centeredSlides: false,  // Evita que queden centrados
-        loop: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

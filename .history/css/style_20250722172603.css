@@ -400,7 +400,6 @@ Estilos de los Ítems del Menú
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 10px;
-    overflow-x: hidden;
     background-color: #D3D3D3; /* Fondo ligeramente gris */
     text-align: center;
     position: relative; /* Necesario para posicionar los botones en la parte inferior */
@@ -495,7 +494,6 @@ Estilos de los Ítems del Menú
     overflow: visible !important; /* Evita que Swiper oculte elementos fuera de su área */
     position: relative;
     z-index: 1; /* Mantiene Swiper debajo del menú */
-       
 }
 
 .swiper-slide {
@@ -1734,7 +1732,7 @@ hr {
     background-size: 100% auto;
     height: 32vh;
     width: 100vw;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .ubicacion {
@@ -1764,16 +1762,14 @@ hr {
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 576px) {
  .fondoContacto {
     background: url('../img/contacto.jpg') no-repeat;
     background-size: 100% auto;
-    height: 28vh;
+    height: 32vh;
     width: 100vw;
-    margin-bottom: 1rem;
-  } 
-
-}
+    margin-bottom: 0;
+  }
 
 @media (max-width: 576px) {
   .footer-col {

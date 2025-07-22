@@ -25,9 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             delay: 2500, // Retraso entre cada slide
         },
         slidesPerView: 1, // Número de slides por vista
-        spaceBetween: 0, // Espacio entre los slides
-         centeredSlides: false,  // Evita que queden centrados
-        loop: false,
+        spaceBetween: 20, // Espacio entre los slides
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -56,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
              320: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 5,
             }
         },
     });

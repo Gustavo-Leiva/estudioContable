@@ -1,5 +1,5 @@
 /* ================================================================
-🎯 8) Implementación de un Carrusel de Imágenes (Swiper)
+🎯 app4.js) Implementación de un Carrusel de Imágenes (Swiper)
 ===================================================================
 💼 **Propósito:**
 - Este script implementa un carrusel de imágenes utilizando la librería **Swiper**. El carrusel permite navegar entre slides (elementos de contenido como imágenes, productos, etc.) de forma automática y manual.
@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
+
+            1280: {
+                slidesPerView: 4, // 4 slides para pantallas muy grandes
+                spaceBetween: 40,
+            },
             1024: {
                 slidesPerView: 3, // Tres slides visibles en pantallas grandes
                 spaceBetween: 30,
@@ -39,10 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 2, // Dos slides visibles en pantallas medianas
                 spaceBetween: 20,
             },
+            
             480: {
                 slidesPerView: 1, // Un slide visible en pantallas pequeñas
                 spaceBetween: 10,
             },
+             320: {
+                slidesPerView: 1,
+                spaceBetween: 5,
+            }
         },
     });
 });

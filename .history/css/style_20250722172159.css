@@ -400,7 +400,6 @@ Estilos de los Ítems del Menú
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 10px;
-    overflow-x: hidden;
     background-color: #D3D3D3; /* Fondo ligeramente gris */
     text-align: center;
     position: relative; /* Necesario para posicionar los botones en la parte inferior */
@@ -495,7 +494,6 @@ Estilos de los Ítems del Menú
     overflow: visible !important; /* Evita que Swiper oculte elementos fuera de su área */
     position: relative;
     z-index: 1; /* Mantiene Swiper debajo del menú */
-       
 }
 
 .swiper-slide {
@@ -1734,7 +1732,7 @@ hr {
     background-size: 100% auto;
     height: 32vh;
     width: 100vw;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .ubicacion {
@@ -1762,17 +1760,6 @@ hr {
   .datos p {
     font-size: 0.95rem;
   }
-}
-
-@media (max-width: 490px) {
- .fondoContacto {
-    background: url('../img/contacto.jpg') no-repeat;
-    background-size: 100% auto;
-    height: 28vh;
-    width: 100vw;
-    margin-bottom: 1rem;
-  } 
-
 }
 
 @media (max-width: 576px) {
@@ -2014,35 +2001,22 @@ hr {
   }
 
 
-
-  
-  .ubicacion {
+   .titular-estudio .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
-  .map {
-    max-width: 95%;
-    width: 100%;
+  .titular-estudio .foto-titular {
+    max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
   }
 
-  .datos {
-    width: 100%;
+  .titular-estudio .text-content {
     padding: 0 1rem;
-    text-align: center;
   }
-
-  .datos h3 {
-    font-size: 1.1rem;
-  }
-
-  .datos p {
-    font-size: 0.95rem;
-  }
-
-  
 }
 
 @media (max-width: 991px) {
