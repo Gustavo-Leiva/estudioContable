@@ -1464,12 +1464,6 @@ hr {
 
 
 
-
-
-
-
-
-
 @media (max-width: 400px) {
   /* HEADER Y MENU */
   .abrir-menu {
@@ -2074,6 +2068,7 @@ hr {
 }
 
 
+
 @media (max-width: 390px) {
   .swiper-container {
     padding: 0;
@@ -2099,24 +2094,7 @@ hr {
     font-size: 1.2rem;
   }
 
-
-
-
-   .top-bar {
-    display: flex; /* Permite alinear los elementos en una fila */
-    justify-content: space-between; /* Distribuye los elementos a los extremos */
-    align-items: baseline; /* Alinea verticalmente los elementos */
-    background-color:  #1A202C; /* Color de fondo corporativo */
-    padding: 1rem; /* Espaciado interno para mejorar la legibilidad */
-    font-size: 0.9rem; /* Tamaño de fuente reducido para mayor compactibilidad */
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    flex-wrap: wrap;
-    height: 8rem;
-   
-    
- }
-
- .nav-bar {
+.nav-bar {
     display: flex; /* Alinea los elementos en una fila */
     justify-content: space-between; /* Separa el logo y el menú */
     align-items: center; /* Alineación vertical centrada */
@@ -2125,58 +2103,26 @@ hr {
     transition: top 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Transiciones suaves */
     z-index: 1050 !important; /* Asegura que siempre esté por encima de Swiper */
     position: relative; /* Asegura que no sea afectado por cambios en Swiper */
-    height: 5rem;
-    
+    height: 2rem;
     
 }
+
 
 
 .social-links {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-       
-}
-
-.social-links a{
- margin-left: 1.8rem;
- font-size: 1rem;
 }
 
 
 
-
-  /* FOOTER */
-  .footer-col {
-    width: 100%;
-    text-align: center;
-  }
-
- 
-  .footer-col .social-links {
-    justify-content: center;
-  }
-
-  .footer-col ul li {
-    margin-left: 0;
-    text-align: center;
-  }
-.footer-col h4::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 5rem; /* ajustable */
-  height: 3px;
-  background-color: #87b8e2;
-  border-radius: 2px;
-}
 
 
 
   
 }
+
 
 
 

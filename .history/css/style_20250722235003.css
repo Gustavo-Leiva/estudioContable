@@ -2152,7 +2152,11 @@ hr {
     text-align: center;
   }
 
- 
+  .footer-col h4::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .footer-col .social-links {
     justify-content: center;
   }
@@ -2161,16 +2165,17 @@ hr {
     margin-left: 0;
     text-align: center;
   }
+
 .footer-col h4::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 5rem; /* ajustable */
-  height: 3px;
-  background-color: #87b8e2;
-  border-radius: 2px;
+    content: ''; /* Crea un elemento visual decorativo */
+    position: absolute; /* Posiciona el elemento relativo al título */
+    left: 0; /* Alineado a la izquierda */
+    bottom: -10px; /* Debajo del texto */
+    /* background-color: #e91e63; */
+    border-bottom: 5px solid #87b8e2;
+    height: 2px; /* Altura de la línea */
+    box-sizing: border-box; /* Incluye el borde en las dimensiones */
+    width: 14rem; /* Longitud de la línea */
 }
 
 
