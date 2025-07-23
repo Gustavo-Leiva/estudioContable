@@ -2075,7 +2075,33 @@ hr {
 
 
 @media (max-width: 390px) {
- 
+  .swiper-container {
+    padding: 0;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    padding: 0.5rem;
+  }
+
+  .beneficio h3 {
+    font-size: 1rem;
+  }
+
+  .beneficio p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 9rem;
+    font-size: 1.2rem;
+  }
+
+
+
+
    .top-bar {
     display: flex; /* Permite alinear los elementos en una fila */
     justify-content: space-between; /* Distribuye los elementos a los extremos */
@@ -2117,59 +2143,27 @@ hr {
  font-size: 1rem;
 }
 
-  .swiper-container {
-    padding: 0 0.5rem;
-     position: relative;
-  overflow: visible; /* 👈 Esto permite que las flechas se vean aunque estén fuera */
+  .custom-slide {
+    flex: 0 0 85%; /* Tarjetas más angostas */
+    padding: 10px; /* Menos espacio interior */
   }
 
-  .swiper-slide {
-    width: 100% !important; /* Solo esto */
-    flex-shrink: 0;
+  .custom-carousel-container {
+    padding: 0 40px; /* Espacio a los lados para las flechas */
   }
 
-  .beneficio {
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: white;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  .custom-nav {
+    top: 45%;
+    font-size: 1.8rem;
   }
 
-  .beneficio i {
-    font-size: 2rem;
+  .custom-nav.prev {
+    left: 5px;
   }
 
-  .beneficio h3 {
-    font-size: 1rem;
+  .custom-nav.next {
+    right: 5px;
   }
-
-  .beneficio p {
-    font-size: 0.85rem;
-    line-height: 1.3;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-
-     top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    font-size: 1.5rem;
-    color: #829DB5;
-    
-    /* top: 9rem;
-    font-size: 1.2rem; */
-  }
-
-  /* Desplazarlas FUERA del carrusel */
-.swiper-button-next {
-  right: -20px; /* 👈 Flecha derecha fuera del slide */
-}
-
-.swiper-button-prev {
-  left: -20px; /* 👈 Flecha izquierda fuera del slide */
-}
 
   /* FOOTER */
   .footer-col {

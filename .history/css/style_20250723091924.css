@@ -2075,7 +2075,33 @@ hr {
 
 
 @media (max-width: 390px) {
- 
+  .swiper-container {
+    padding: 0;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    padding: 0.5rem;
+  }
+
+  .beneficio h3 {
+    font-size: 1rem;
+  }
+
+  .beneficio p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 9rem;
+    font-size: 1.2rem;
+  }
+
+
+
+
    .top-bar {
     display: flex; /* Permite alinear los elementos en una fila */
     justify-content: space-between; /* Distribuye los elementos a los extremos */
@@ -2118,58 +2144,31 @@ hr {
 }
 
   .swiper-container {
-    padding: 0 0.5rem;
-     position: relative;
-  overflow: visible; /* 👈 Esto permite que las flechas se vean aunque estén fuera */
+    padding: 0 1rem; /* menos padding lateral */
   }
 
-  .swiper-slide {
-    width: 100% !important; /* Solo esto */
+
+/* Ajusta el tamaño de las tarjetas del carrusel */
+.swiper-slide {
+    width: 200px !important; /* o 220px, ajustá según necesidad */
     flex-shrink: 0;
-  }
+}
 
-  .beneficio {
+/* Asegura que los elementos internos no se pasen del borde */
+.beneficio {
     padding: 1rem;
     border-radius: 12px;
-    background-color: white;
+    background-color: white; /* o el color de tu diseño */
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .beneficio i {
-    font-size: 2rem;
-  }
-
-  .beneficio h3 {
-    font-size: 1rem;
-  }
-
-  .beneficio p {
-    font-size: 0.85rem;
-    line-height: 1.3;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-
-     top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    font-size: 1.5rem;
-    color: #829DB5;
-    
-    /* top: 9rem;
-    font-size: 1.2rem; */
-  }
-
-  /* Desplazarlas FUERA del carrusel */
-.swiper-button-next {
-  right: -20px; /* 👈 Flecha derecha fuera del slide */
 }
 
-.swiper-button-prev {
-  left: -20px; /* 👈 Flecha izquierda fuera del slide */
+/* Ícono más pequeño si hace falta */
+.beneficio i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
+
 
   /* FOOTER */
   .footer-col {

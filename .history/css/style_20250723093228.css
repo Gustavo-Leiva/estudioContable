@@ -2117,6 +2117,10 @@ hr {
  font-size: 1rem;
 }
 
+.beneficios{
+  width: 80%;
+}
+
   .swiper-container {
     padding: 0 0.5rem;
      position: relative;

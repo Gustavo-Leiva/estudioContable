@@ -2117,10 +2117,10 @@ hr {
  font-size: 1rem;
 }
 
+
+
   .swiper-container {
     padding: 0 0.5rem;
-     position: relative;
-  overflow: visible; /* 👈 Esto permite que las flechas se vean aunque estén fuera */
   }
 
   .swiper-slide {

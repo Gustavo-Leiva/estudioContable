@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         autoplay: {
             delay: 2500, // Retraso entre cada slide
         },
-        slidesPerView: 1, // Número de slides por vista
+        slidesPerView: "auto, // Número de slides por vista
         spaceBetween: 2, // Espacio entre los slides
         centeredSlides: false,  // Evita que queden centrados
         loop: false,

@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 1, // Un slide visible en pantallas pequeñas
                 spaceBetween: 5,
             },
-          
+            
              320: {
                 slidesPerView: 1,
                 spaceBetween: 2,

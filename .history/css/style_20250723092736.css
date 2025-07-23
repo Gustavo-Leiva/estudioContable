@@ -2117,10 +2117,10 @@ hr {
  font-size: 1rem;
 }
 
+
+
   .swiper-container {
     padding: 0 0.5rem;
-     position: relative;
-  overflow: visible; /* 👈 Esto permite que las flechas se vean aunque estén fuera */
   }
 
   .swiper-slide {
@@ -2151,25 +2151,16 @@ hr {
 
   .swiper-button-next,
   .swiper-button-prev {
-
-     top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    font-size: 1.5rem;
-    color: #829DB5;
     
-    /* top: 9rem;
-    font-size: 1.2rem; */
+    top: 9rem;
+    font-size: 1.2rem;
   }
 
-  /* Desplazarlas FUERA del carrusel */
-.swiper-button-next {
-  right: -20px; /* 👈 Flecha derecha fuera del slide */
-}
+  .swiper-button-prev {
+ margin-left: 3rem;
 
-.swiper-button-prev {
-  left: -20px; /* 👈 Flecha izquierda fuera del slide */
-}
+  }
+ 
 
   /* FOOTER */
   .footer-col {
