@@ -1602,7 +1602,14 @@ hr {
 
 
   /* SECCIÓN ACERCA DE NOSOTROS */
-    .titular-estudio {
+  .fondoNosotros {
+    background: url('../img/nosotros.jpg') no-repeat;
+    background-size: 100% auto;
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .titular-estudio {
     height: auto;
     padding: 2rem 1rem;
   }
@@ -1630,7 +1637,12 @@ hr {
   
 
   /* SECCIÓN SERVICIOS */
-
+  .fondoServicios {
+    background: url('../img/servicios.jpg') center no-repeat;
+    background-size: 100% auto;
+    height: 24vh;
+    width: 100vw;
+  }
 
   .container-section {
     flex-direction: column;
@@ -1731,13 +1743,26 @@ hr {
 
 
 
- 
-   /* SECCIÓN CONTACTO */
+  /* SECCIÓN BLOG */
+  .fondoBlog {
+    background: url('../img/blog.jpg') center bottom no-repeat;
+    background-size: 100% auto;
+    height: 18vh;
+    width: 100vw;
+  }
+
+  /* SECCIÓN CONTACTO */
   .imagenContenedora {
     padding: 1rem;
   }
 
- 
+  .fondoContacto {
+    background: url('../img/contacto.jpg') no-repeat;
+    background-size: 100% auto;
+    height: 32vh;
+    width: 100vw;
+    margin-bottom: 1rem;
+  }
 
   .ubicacion {
     flex-direction: column;
@@ -1767,8 +1792,21 @@ hr {
 }
 
 @media (max-width: 490px) {
+ .fondoContacto {
+    background: url('../img/contacto.jpg') no-repeat;
+    background-size: 100% auto;
+    height: 28vh;
+    width: 100vw;
+    margin-bottom: 1rem;
+  } 
 
-
+    .fondoBlog {
+    background: url('../img/blog.jpg') center bottom no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 22vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    margin-bottom: 2rem;
+}
 
 
    .custom-slide {
@@ -1933,7 +1971,15 @@ hr {
 @media (max-width: 600px) {
 
 
- 
+  .fondoBlog {
+    background: url('../img/blog.jpg') center bottom no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 30vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    margin-bottom: 2rem;
+}
+
+
   .custom-slide {
     flex: 0 0 100%;
   }
@@ -2026,6 +2072,37 @@ hr {
 
 
 @media screen and (min-width: 401px) and (max-width: 768px) {
+
+
+  .fondoNosotros {
+    background: url('../img/nosotros.jpg') no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 29vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    background-position:center 54%;/* Ajusta la imagen hacia arriba */
+}
+
+.fondoServicios {
+    background: url('../img/servicios.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 29vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+
+.fondoBlog {
+    background: url('../img/blog.jpg') center bottom no-repeat;
+    background-size: 100% auto;
+    height: 29vh;
+    width: 100vw;
+  }
+
+
+  .fondoContacto {
+    background: url('../img/contacto.jpg') center bottom no-repeat;
+    background-size: 100% auto;
+    height: 29vh;
+    width: 100vw;
+  }
 
 
 .beneficios-nav {
@@ -2242,6 +2319,14 @@ hr {
 }
 
 
+@media(max-width: 480px) {
+  .fondoServicios {
+    background: url('../img/servicios.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 22vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+}
 
 @media (max-width: 768px) {
   .custom-slide {
@@ -2414,15 +2499,34 @@ hr {
     display: none;
   }
 
- 
- li.email-item {
-    display: none;
-  }
-
-.top-bar{
-  height: 3rem;
+   .fondoServicios {
+    background: url('../img/servicios.jpg') center bottom no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 28vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    margin-bottom: 1rem;
 }
 
+ 
+  .fondoBlog {
+    background: url('../img/blog.jpg') center bottom no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 29vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    margin-bottom: 1rem;
+}
+.leyenda{
+    
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    margin-top: 5rem;
+    position:absolute;
+    text-align: center;
+    color:  #becedb;
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards ;
+   
+}
   
 }
 

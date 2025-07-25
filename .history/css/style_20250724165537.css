@@ -1731,13 +1731,19 @@ hr {
 
 
 
- 
+  /* SECCIÓN BLOG */
    /* SECCIÓN CONTACTO */
   .imagenContenedora {
     padding: 1rem;
   }
 
- 
+  .fondoContacto {
+    background: url('../img/contacto.jpg') no-repeat;
+    background-size: 100% auto;
+    height: 32vh;
+    width: 100vw;
+    margin-bottom: 1rem;
+  }
 
   .ubicacion {
     flex-direction: column;
@@ -2242,6 +2248,17 @@ hr {
 }
 
 
+@media(max-width: 480px) {
+
+
+  
+  .fondoServicios {
+    background: url('../img/servicios.jpg') center no-repeat;
+    background-size: 100% auto; /* Asegura que ocupe todo el ancho sin deformarse */
+    height: 22vh; /* Reduce la altura para hacerla más angosta */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+}
+}
 
 @media (max-width: 768px) {
   .custom-slide {
@@ -2415,13 +2432,9 @@ hr {
   }
 
  
- li.email-item {
-    display: none;
-  }
+ 
 
-.top-bar{
-  height: 3rem;
-}
+
 
   
 }

@@ -2415,13 +2415,11 @@ hr {
   }
 
  
- li.email-item {
+ .email-item {
     display: none;
   }
 
-.top-bar{
-  height: 3rem;
-}
+
 
   
 }
