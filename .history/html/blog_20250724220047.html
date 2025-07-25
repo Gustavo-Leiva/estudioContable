@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Blog</title>
     <script src="https://kit.fontawesome.com/363b4ef9d0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico" >
     <script src="../js/app.js"></script>
+    <script src="../js/app1.js"></script>
     <script src="../js/app7.js"></script>
 </head>
 <body>
@@ -20,7 +22,7 @@
                 <div class="contacto">
                     <ul class="nav-contacto">
                         <li><i class="fa-solid fa-phone"></i><a href="#" class="phone">11 3579-7940</a></li>
-                        <li class="email-item"><i class="fa-solid fa-envelope"></i> <a href="#" class="email">lucianosanabria85@gmail.com</a></li>
+                        <li ><i class="fa-solid fa-envelope"></i> <a href="#" class="email">lucianosanabria85@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="social-links">
@@ -49,100 +51,67 @@
         </nav>
     </header>
 
-    <section class ="imagenContenedora fondoContacto" id="imagenContenedora">
-        <h1  class ="leyenda">Contactanos</h1>     
-                 
+    <section class="imagenContenedora fondoBlog" id="imagenContenedora">
+        <!-- <img class="contenedoraBlog" src="../img/blog.jpg" alt="Imagen de blog"> -->
+        <h1 class="leyenda">Novedades Profesionales</h1>
     </section>
 
-        
-        <section id="contacto" class="contactanos">
-            <div class="ubicacion">
-                <div id="map" class="map">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.290185691691!2d-58.39585422056457!3d-34.60049239595466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7e8306ca29%3A0x7bb987127187281c!2sConsejo%20Ciencias%20Econ%C3%B3micas!5e0!3m2!1ses-419!2sar!4v1708299247180!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.9848177926808!2d-58.468140161615715!3d-34.554324184203516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6830eb5b7bd%3A0xbc7a6701cbed8e4d!2sAmen%C3%A1bar%203136%2C%20C1429AEF%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1743774946054!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="datos">
-                    <div>
-                        <h3>Dirección</h3>
-                        <p>Amenabar 3136 CP1429 Ciudad Autónoma de Buenos Aires.</p>
-                    </div>
-         
-                    <div>
-                        <h3>Teléfono</h3>
-                        <p>+54-11-3579-7940</p>
-                    </div>
-         
-                    <div>
-                     <h3>Email</h3>
-                     <p><a href="mailto:lucianosanabria85@gmail.com">lucianosanabria85@gmail.com</a></p>
-                    </div>
-    
-    
-                </div>
-            </div>      
-          
-        </section>
-    
-          <!-- Ícono de WhatsApp flotante -->
-          <a href="https://wa.me/1137597940" target="_blank" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-       <footer class="footer">
+      <!-- Ícono de WhatsApp flotante -->
+      <a href="https://wa.me/1137597940" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Contenedor donde se cargarán dinámicamente los artículos -->
+    <section id="blog-container" class="blog-container"></section>
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="row">
-                <div class= "footer-col">
+                <div class="footer-col">
                     <h4 class="title">Estudio</h4>
                     <ul>
                         <li><a href="/index.html">Inicio</a></li>
                         <li><a href="/html/nosotros.html">Nosotros</a></li>
                         <li><a href="/html/servicios.html">Servicios</a></li>
                         <li><a href="/html/blog.html">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="/html/contacto.html">Contacto</a></li>
                     </ul>
                 </div>   
-
                 <div class="footer-col">
                     <h4 class="title">Servicios</h4>
                     <ul>
-                        <li><a href="#">Auditoria</a></li>
+                        <li><a href="#">Auditoría</a></li>
                         <li><a href="#">Impuestos</a></li>
                         <li><a href="#">Laboral</a></li>
                         <li><a href="#">Societario</a></li>
-                        <li><a href="#">Consultora</a></li>
-                        <li><a href="#">Outsoursing</a></li>
+                        <li><a href="#">Consultoría</a></li>
+                        <li><a href="#">Outsourcing</a></li>
                     </ul>
                 </div>    
-                    
-
                 <div class="footer-col">
                     <h4 class="title">Clientes</h4>
                     <ul>
                         <li><a href="#">Industrias</a></li>
                         <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Concesionarias automotriz</a></li>
+                        <li><a href="#">Concesionarias automotrices</a></li>
                         <li><a href="#">Entidades Financieras</a></li>
                     </ul>
                 </div>    
-                    
-
-                <div class="footer-col  footer-links">
+                <div class="footer-col footer-links">
                     <h4 class="title">¡Seguinos!</h4>
                     <div class="social-links">
                         <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/luciano-sanabria-22b42674/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>               
             </div>
-
         </div>
-
         <hr>     
-             
-        <p class="derechos">&copy;2025 All rights reserved | created by Gustavo Leiva</p>
-
+        <p class="derechos">&copy; 2025 Todos los derechos reservados | Creado por Gustavo Leiva</p>
     </footer> 
 
+    
 </body>
 </html>
